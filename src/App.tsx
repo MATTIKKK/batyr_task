@@ -44,7 +44,7 @@ const tableList: TableEntryType[] = [
         student_info: {
           name: 'Данила',
           surname: 'Дементьев',
-          img: boy2,  
+          img: boy2,
         },
       },
     ],
@@ -53,22 +53,36 @@ const tableList: TableEntryType[] = [
     id: 2,
     title: 'Дело №2. Курение 19.11.2024',
     status: 'declined',
-    table_items: [],
+    table_items: [
+      {
+        id: 1,
+        type: 'Распитие алкоголя в университете',
+        created_at: '14.11.2024',
+        status: 'active',
+        student_info: {
+          name: 'Аружан',
+          surname: 'Барушева',
+          img: girl1,
+        },
+      },
+    ],
   },
 ];
 
 function App() {
-  return <div className="app">
-    {tableList.map((table) => (
-      <Table table={table} />
-    ))}
+  return (
+    <div className="app">
+      {tableList.map((table) => (
+        <Table table={table} />
+      ))}
 
-    <Button />
+      <Button />
 
-    <Card />
+      <Card />
 
-    <Form />
-  </div>;
+      <Form />
+    </div>
+  );
 }
 
 export default App;
