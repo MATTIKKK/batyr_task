@@ -56,7 +56,7 @@ const tableList: TableEntryType[] = [
     table_items: [
       {
         id: 1,
-        type: 'Распитие алкоголя в университете',
+        type: 'Курение',
         created_at: '14.11.2024',
         status: 'active',
         student_info: {
