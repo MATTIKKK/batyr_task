@@ -52,7 +52,7 @@ const tableList: TableEntryType[] = [
   {
     id: 2,
     title: 'Дело №2. Курение 19.11.2024',
-    status: 'declined',
+    status: 'rejected',
     table_items: [
       {
         id: 1,

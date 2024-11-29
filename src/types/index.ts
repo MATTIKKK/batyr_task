@@ -15,7 +15,7 @@ export type TableItemType = {
 export type TableEntryType = {
   id: number;
   title: string;
-  status: 'pending' | 'declined' | 'approved';
+  status: 'pending' | 'approved' | 'rejected';
   table_items: TableItemType[];
 };
 
@@ -34,3 +34,5 @@ export type TextareaFieldType = {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
 };
+
+export type TableStatusType = "pending" | "approved" | "rejected";
